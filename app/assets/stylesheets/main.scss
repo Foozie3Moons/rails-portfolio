@@ -1,0 +1,37 @@
+// Place all the styles related to the main controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bulma";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+body {
+  background-color: #212121;
+  color: #E3E3E3 !important;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.hero-foot {
+  margin-bottom: 1em;
+}
+
+.navbar-item {
+  color: #FFFFFF !important;
+}
+
+.is-active {
+  background-color: #E3E3E3 !important;
+  color: #212121 !important;
+}
+
+.navbar-item:hover {
+  background-color: #9E9E9E !important;
+  color: #212121 !important;
+}
+
+.is-active:hover {
+  color: #212121 !important;
+}

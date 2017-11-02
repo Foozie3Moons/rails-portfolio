@@ -1,0 +1,30 @@
+<nav class="navbar">
+  <div class="container">
+    <div class="navbar-brand">
+      <span id='nav-menu' class="navbar-burger burger" data-target="navbarMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </div>
+    <div id="navbarMenu" class="navbar-menu">
+      <div class="navbar-end">
+        <%= link_to 'About', root_path, class: ['navbar-item', active_class(root_path)]  %>
+        <%= link_to 'Portfolio', portfolio_path, class: ['navbar-item', active_class(portfolio_path)] %>
+        <%= link_to 'Contact', contact_path, class: ['navbar-item', active_class(contact_path)] %>
+        <%= link_to 'https://docs.google.com/spreadsheets/d/1Sh6WGhm9UPcfIKJuEKpnI-T0XekxCM5IM3bDGiRFcug/edit?usp=sharing',
+          target: :_blank,
+          class: 'navbar-item bold' do
+        %>
+        Resume&nbsp;<i class="fa fa-arrow-right" aria-hidden="true"></i>
+        <% end %>
+        <%= link_to "https://www.linkedin.com/in/matthew-bell-290/",
+          target: :_blank,
+          class: 'navbar-item' do
+        %>
+          <i class="fa fa-linkedin" aria-hidden="true"></i>&nbsp;<i class="fa fa-arrow-right" aria-hidden="true"></i>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</nav>
