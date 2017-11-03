@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
-  root 'main#about'
+
+  root 'main#index'
+
+  get 'about' => 'main#about'
 
   get 'contact' => 'main#contact'
 

@@ -5,11 +5,6 @@
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
-body {
-  background-color: #212121;
-  color: #E3E3E3 !important;
-}
-
 .bold {
   font-weight: bold;
 }
@@ -18,20 +13,57 @@ body {
   margin-bottom: 1em;
 }
 
-.navbar-item {
-  color: #FFFFFF !important;
-}
-
 .is-active {
-  background-color: #E3E3E3 !important;
+  background-color: #76FF03 !important;
   color: #212121 !important;
 }
 
-.navbar-item:hover {
-  background-color: #9E9E9E !important;
+.navbar-item:not(.is-active):hover {
+  background-color: #64DD17 !important;
   color: #212121 !important;
 }
 
-.is-active:hover {
-  color: #212121 !important;
+.about-me * {
+  margin: .5em 0
+}
+
+.button.is-info.is-outlined {
+  color: #76FF03;
+  border-color: #76FF03;
+}
+
+.button.is-info.is-outlined:hover {
+  background-color: #76FF03;
+  border-color: #76FF03;
+  color: #212121;
+}
+
+.title {
+  color: #18FFFF !important;
+}
+
+@media screen and (max-width: 1023px) {
+  .navbar-menu.is-active {
+    background-color: none;
+    color: white;
+  }
+
+  #nav-menu {
+    background-color: #212121 !important;
+    color: white;
+  }
+
+  .is-active {
+    background-color: #76FF03 !important;
+    color: #212121 !important;
+  }
+
+  .navbar-item:not(.is-active) {
+    color: #E3E3E3 !important;
+  }
+
+  .navbar-item:not(.is-active):hover {
+    background-color: #64DD17 !important;
+    color: #212121 !important;
+  }
 }
