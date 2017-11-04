@@ -1,5 +1,8 @@
 $(document).on('turbolinks:load', function() {
+  draw();
+});
 
+function draw() {
   var width = 1900,
   height = 1700,
   radius = 20;
@@ -103,4 +106,4 @@ $(document).on('turbolinks:load', function() {
       }
     };
   }
-});
+}

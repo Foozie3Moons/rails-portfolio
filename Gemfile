@@ -26,6 +26,7 @@ gem 'sqlite3'
 gem 'material_icons'
 gem 'font-awesome-sass', '~> 4.7.0'
 gem 'animate-rails'
+gem 'haml'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
