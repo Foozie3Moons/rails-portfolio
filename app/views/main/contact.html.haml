@@ -5,3 +5,13 @@
       %li Email | matthew.bell.290@gmail.com
       %li Skype | mathyushazam
   .is-5.offset-1
+    %div{:align => "center"}
+      %h3 Send Me A Message
+      = form_tag '/contact' do
+        Email:
+        = text_field_tag 'email', ''
+        Subject:
+        = text_field_tag 'subject', ''
+        Body
+        = text_area_tag 'body', ''
+        = submit_tag 'submit', :value => 'submit'
