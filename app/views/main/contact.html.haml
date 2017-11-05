@@ -1,17 +1,24 @@
 %h1.title.is-2 Contact Me
 %section.columns
-  .is-3
-    %ul
-      %li Email | matthew.bell.290@gmail.com
-      %li Skype | mathyushazam
-  .is-5.offset-1
-    %div{:align => "center"}
-      %h3 Send Me A Message
-      = form_tag '/contact' do
-        Email:
-        = text_field_tag 'email', ''
-        Subject:
-        = text_field_tag 'subject', ''
-        Body
-        = text_area_tag 'body', ''
-        = submit_tag 'submit', :value => 'submit'
+  .column.is-2.is-offset-3
+    .subtitle.is-4
+      %span.bold Email |
+  .column.is-4
+    = mail_to 'matthew.bell.290@gmail.com' do
+      %span.primary.bold.underline
+        matthew.bell.290@gmail.com
+%section.columns
+  .column.is-2.is-offset-3
+    .subtitle.is-4
+      %span.bold Skype |
+  .column.is-4
+    %span.primary.bold mathyushazam
+%section.columns
+  .column.is-2.is-offset-3
+    .subtitle.is-4
+      %span.bold Linkedin |
+  .column.is-4
+    = link_to 'https://linkedin.com/in/matthew-bell-290',
+        :target => ':_blank' do
+      %span.primary.bold.underline
+        %i.fa.fa-linkedin-square.fa-2x

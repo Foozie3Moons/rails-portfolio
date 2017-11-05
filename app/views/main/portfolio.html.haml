@@ -1,2 +1,31 @@
-%h1 Main#portfolio
-%p Find me in app/views/main/portfolio.html.erb
+%h1.title Portfolio
+.scrollable
+  .columns.is-vcentered
+    .column.is-6
+      %h2.title.is-5 Rails Calendar Organizer
+      %h3.primary.bold Ruby, Ruby on Rails, D3.js
+      %p
+        Using Handsontable as a data input to allow for bulk insertion of calendar events using a familiar spreadsheet input.
+    .column.is-6
+      Image coming soon
+  .columns.is-vcentered
+    .column.is-6
+      %h1.title.is-5 Habitrack
+      %span.primary.bold MongoDB, Express, React, Node.js (MERN), D3.js
+      %p
+        A group collaboration habit tracker using D3/[charting library] to visualize and motivate users.
+
+    .column.is-6
+      = image_tag 'habitrack_screenshot'
+  .columns.is-vcentered
+    .column.is-6
+      %h2.title.is-5 Eoen Loan Calculator
+      %h3.primary.bold Node.js, Postgresql, D3.js
+    .column.is-6
+      = image_tag 'eoen_screenshot'
+  .columns.is-vcentered
+    .column.is-6
+      %h2.title.is-5 Checkers
+      %span.primary.bold jQuery, Javascript ES5
+    .column.is-6
+      = image_tag 'checkers_screenshot'
