@@ -10,13 +10,13 @@
   %body
     %section.hero.is-fullheight.is-dark.is-bold
       .hero-head
-        = render 'partials/navbar'
+        = render :partial => 'partials/navbar'
       .hero-body
-        - if request.fullpath == root_path
+        - if request.fullpath.eql? root_path
           = yield
         - else
-          = render 'partials/body'
+          = render :partial => 'partials/body'
       .hero-foot
-        = render 'partials/footer'
+        = render :partial => 'partials/footer'
       .background-inner
         %svg.background-svg

@@ -1,0 +1,34 @@
+= render :partial => 'partials/about_tabs'
+
+.scrollable.has-text-left-aligned
+  %h1.title.is-2 Hi, I'm Matt
+  %p
+    I am a
+    %span.primary.bold full stack web developer
+    currently specializing in
+    %span.primary.bold Ruby
+    and
+    %span.primary.bold Ruby on Rails.
+    I love working with the full stack of an application, but feel more at home with the back-end.
+    I like being able to see the big picture of an application so I can see how all the pieces fit together, and make sure that everything is communicating properly with one another.
+  %h1.title.is-3 My Passion
+  %p
+    My passion for coding came from an inability to solve simple problems in a fast and efficient way. Data stored in spreadsheets just does not cut it.
+    So I started learning
+    %span.primary.bold Ruby
+    in my free time, and eventually used that knowledge to
+    %span.primary.bold write useful scripts
+    to automate tasks professionally, such as document parsing and data organization.
+    I found that programming was my calling, and I enrolled in
+    %span.primary.bold General Assembly's Web Development Immersive
+    to reinforce existing knowledge in addition to learning countless new concepts.
+    I'm excited to continue to learn and grow as I use and develop new technologies to solve problems big and small.
+  %h1.title.is-3
+  %h1.title.is-3 Learn More
+  %p
+    = link_to contact_path, :class => ['button', 'is-info', 'is-outlined', 'is-small'] do
+      Drop me a line
+    &nbsp;and check out my
+    = link_to portfolio_path, :class => ['button', 'is-info', 'is-outlined', 'is-small'] do
+      porfolio
+    &nbsp;for a sample of my code. Feel free to ask me any questions.

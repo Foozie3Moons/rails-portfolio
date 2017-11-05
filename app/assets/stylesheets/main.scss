@@ -21,6 +21,14 @@
   padding-top: 0;
 }
 
+li.is-active * {
+  color: #212121 !important;
+}
+
+.tabs li:hover {
+  background-color: #64DD17;
+}
+
 .persistent-container {
   padding: 2em;
 }
@@ -38,7 +46,8 @@
 
 .scrollable {
   overflow-y: auto;
-  height: 700px;
+  overflow-x: hidden;
+  height: 600px;
 }
 
 .scrollable::-webkit-scrollbar {
