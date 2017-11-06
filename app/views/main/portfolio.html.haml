@@ -1,11 +1,15 @@
-%h1.title Portfolio
-.scrollable
+%h1.title.is-2.has-text-left-aligned Portfolio
+.scrollable.has-text-left-aligned
   .columns.is-vcentered
     .column.is-6
       %h2.title.is-5 Rails Calendar Organizer
       %h3.primary.bold Ruby, Ruby on Rails, D3.js
       %p
-        Using Handsontable as a data input to allow for bulk insertion of calendar events using a familiar spreadsheet input.
+        Using
+        %span.primary.bold Handsontable
+        as a data input to allow for bulk insertion of calendar events using a familiar spreadsheet input.
+      = link_to 'https://github.com/Foozie3Moons/sheet-to-cal' do
+        %i.fa.fa-github.fa-3x.primary
     .column.is-6
       Image coming soon
   .columns.is-vcentered
@@ -14,18 +18,27 @@
       %span.primary.bold MongoDB, Express, React, Node.js (MERN), D3.js
       %p
         A group collaboration habit tracker using D3/[charting library] to visualize and motivate users.
-
+      = link_to 'https://github.com/Foozie3Moons/habitrack' do
+        %i.fa.fa-github.fa-3x.primary
     .column.is-6
-      = image_tag 'habitrack_screenshot'
+      = link_to 'http://habitrackapp.herokuapp.com' do
+        = image_tag 'habitrack_screenshot'
+
   .columns.is-vcentered
     .column.is-6
       %h2.title.is-5 Eoen Loan Calculator
       %h3.primary.bold Node.js, Postgresql, D3.js
+      %p Some sort of description
+      = link_to 'https://github.com/Foozie3Moons/eoen' do
+        %i.fa.fa-github.fa-3x.primary
     .column.is-6
       = image_tag 'eoen_screenshot'
   .columns.is-vcentered
     .column.is-6
       %h2.title.is-5 Checkers
+      %p Some sort of descriptoin
+      = link_to 'https://github.com/Foozie3Moons/extreme-checkers' do
+        %i.fa.fa-github.fa-3x.primary
       %span.primary.bold jQuery, Javascript ES5
     .column.is-6
       = image_tag 'checkers_screenshot'
