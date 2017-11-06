@@ -3,23 +3,32 @@
   .columns.is-vcentered
     .column.is-6
       %h2.title.is-5 Rails Calendar Organizer
-      %h3.primary.bold Ruby, Ruby on Rails, D3.js
+      %h3.primary.bold Ruby, Ruby on Rails, D3.js, PostgreSQL, Bulma
       %p
         Using
         %span.primary.bold Handsontable
         as a data input to allow for bulk insertion of calendar events using a familiar spreadsheet input.
-      = link_to 'https://github.com/Foozie3Moons/sheet-to-cal' do
-        %i.fa.fa-github.fa-3x.primary
+      %p
+        = link_to 'Github', 'https://github.com/Foozie3Moons/sheet-to-cal',
+          class: ['button', 'is-small', 'is-info', 'is-outlined'], target: :_blank
+        = link_to 'Website', 'https://habitrackapp.herokuapp.com',
+          class: ['button', 'is-small', 'is-info', 'is-outlined'], target: :_blank
     .column.is-6
-      Image coming soon
+      = link_to 'https://sheet2cal.herokuapp.com', target: :_blank do
+        = image_tag 'transparent-laptop'
   .columns.is-vcentered
     .column.is-6
       %h1.title.is-5 Habitrack
-      %span.primary.bold MongoDB, Express, React, Node.js (MERN), D3.js
+      %span.primary.bold MongoDB, Express, React, Node.js (MERN), D3.js, Material UI
       %p
-        A group collaboration habit tracker using D3/[charting library] to visualize and motivate users.
-      = link_to 'https://github.com/Foozie3Moons/habitrack' do
-        %i.fa.fa-github.fa-3x.primary
+        A group collaboration habit tracker using
+        %span.primary.bold D3/Recharts
+        to visualize and motivate users to develop positive habits.
+      %p
+        = link_to 'Github', 'https://github.com/Foozie3Moons/habitrack',
+          class: ['button', 'is-small', 'is-info', 'is-outlined'], target: :_blank
+        = link_to 'Website', 'https://habitrackapp.herokuapp.com',
+          class: ['button', 'is-small', 'is-info', 'is-outlined'], target: :_blank
     .column.is-6
       = link_to 'http://habitrackapp.herokuapp.com' do
         = image_tag 'habitrack_screenshot'
@@ -27,18 +36,57 @@
   .columns.is-vcentered
     .column.is-6
       %h2.title.is-5 Eoen Loan Calculator
-      %h3.primary.bold Node.js, Postgresql, D3.js
-      %p Some sort of description
-      = link_to 'https://github.com/Foozie3Moons/eoen' do
-        %i.fa.fa-github.fa-3x.primary
+      %h3.primary.bold Node.js, PostgreSQL, D3.js, Semantic UI
+      %p
+        This is a pet project of mine. Calculating loan data from user input, saving the user's data, and visualizing it with
+        %span.primary.bold D3.
+        Proper working auth with
+        %span.primary.bold passport
+        and
+        %span.primary.bold session.
+      %p
+        = link_to 'Github', 'https://github.com/Foozie3Moons/eoen',
+          class: ['button', 'is-small', 'is-info', 'is-outlined'], target: :_blank
+        = link_to 'Website', 'https://eoen.herokuapp.com',
+          class: ['button', 'is-small', 'is-info', 'is-outlined'], target: :_blank
     .column.is-6
-      = image_tag 'eoen_screenshot'
+      = link_to 'https://eoen.herokuapp.com', target: :_blank do
+        = image_tag 'eoen_screenshot'
+  .columns.is-vcentered
+    .column.is-6
+      %h2.title.is-5 CostuME (React Hackathon)
+      %span.primary.bold React
+      %p
+        A fully functional
+        %span.primary.bold React
+        app built in 24 hours. Have you ever had difficulty choosing a halloween costume?
+        CostuME provides a tinder-styled interface where you can compare liked items to one another to make a decision on which costume you want this year.
+        Search this app for Halloween costume ideas, and return number of different images, their cost, and a link to the item to purchase.
+      %p
+        = link_to 'Github', 'https://github.com/Foozie3Moons/react-ecommerce-hackathon',
+          class: ['button', 'is-small', 'is-info', 'is-outlined'], target: :_blank
+        = link_to 'Website', 'https://costume.herokuapp.com',
+          class: ['button', 'is-small', 'is-info', 'is-outlined'], target: :_blank
+    .column.is-6
+      = link_to 'https://costume.herokuapp.com', target: :_blank do
+        = image_tag 'transparent-laptop'
+
   .columns.is-vcentered
     .column.is-6
       %h2.title.is-5 Checkers
-      %p Some sort of descriptoin
-      = link_to 'https://github.com/Foozie3Moons/extreme-checkers' do
-        %i.fa.fa-github.fa-3x.primary
-      %span.primary.bold jQuery, Javascript ES5
+      %span.primary.bold jQuery, Javascript (ES5)
+      %p
+        A purely
+        %span.primary.bold javascript/jQuery game.
+        Skeletal HTML and then
+        %span.primary.bold jQuery DOM manipulation
+        for the rest. The intention of building this was to demonstrate knowledge of the
+        %span.primary.bold DOM.
+      %p
+        = link_to 'Github', 'https://github.com/Foozie3Moons/extreme-checkers',
+          class: ['button', 'is-small', 'is-info', 'is-outlined'], target: :_blank
+        = link_to 'Website', 'https://foozie3moons.github.io/extreme-checkers',
+          class: ['button', 'is-small', 'is-info', 'is-outlined'], target: :_blank
     .column.is-6
-      = image_tag 'checkers_screenshot'
+      = link_to 'https://foozie3moons.github.io/extreme-checkers', target: :_blank do
+        = image_tag 'checkers_screenshot'
