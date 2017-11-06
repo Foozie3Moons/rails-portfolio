@@ -8,10 +8,10 @@
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   %body
-    %section.hero.is-fullheight.is-dark.is-bold
+    %section.hero.is-fullheight.is-dark.is-bold#main-container
       .hero-head
         = render :partial => 'partials/navbar'
-      .hero-body
+      .hero-body.page-content
         - if request.fullpath.eql? root_path
           = yield
         - else
@@ -20,3 +20,16 @@
         = render :partial => 'partials/footer'
       .background-inner
         %svg.background-svg
+      :javascript
+        (function() {
+          window.$this = new (App.#{ controller_path.split(/\/|_/).map(&:capitalize).join('') } || App.Base)();
+          if (typeof $this.beforeAction === 'function') {
+            $this.beforeAction("#{action_name}");
+          }
+          if (typeof $this.#{ action_name } === 'function') {
+            $this.#{ action_name }();
+          }
+          if (typeof $this.afterAction === 'function') {
+            $this.afterAction("#{action_name}");
+          }
+        })();
