@@ -24,9 +24,7 @@ gem 'jquery-rails', '~> 4.0', '>= 4.0.5'
 gem 'react-rails'
 gem 'material_icons'
 gem 'font-awesome-sass', '~> 4.7.0'
-gem 'animate-rails'
 gem 'haml'
-gem 'mail_form'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
