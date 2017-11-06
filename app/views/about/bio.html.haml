@@ -1,8 +1,8 @@
 = render :partial => 'partials/about_tabs'
 
-.scrollable.has-text-left-aligned
-  %h1.title.is-2 Hi, I'm Matt
-  %p
+.scrollable.has-text-left-aligned.about
+  %h1.title.is-2.first Hi, I'm Matt
+  %p.second
     I am a
     %span.primary.bold full stack web developer
     currently specializing in
@@ -11,8 +11,8 @@
     %span.primary.bold Ruby on Rails.
     I love working with the full stack of an application, but feel more at home with the back-end.
     I like being able to see the big picture of an application so I can see how all the pieces fit together, and make sure that everything is communicating properly with one another.
-  %h1.title.is-3 My Passion
-  %p
+  %h1.title.is-3.third My Passion
+  %p.fourth
     My passion for coding came from an inability to solve simple problems in a fast and efficient way. Data stored in spreadsheets just does not cut it.
     So I started learning
     %span.primary.bold Ruby
@@ -23,10 +23,8 @@
     %span.primary.bold General Assembly's Web Development Immersive
     to reinforce existing knowledge in addition to learning countless new concepts.
     I'm excited to continue to learn and grow as I use and develop new technologies to solve problems big and small.
-  %h1.title.is-3 Where I'm at
-  %h1.title.is-3 Where I'm going
-  %h1.title.is-3 Learn More
-  %p
+  %h1.title.is-3.fifth Learn More
+  %p.sixth
     = link_to contact_path, :class => ['button', 'is-info', 'is-outlined', 'is-small'] do
       Drop me a line
     &nbsp;and check out my

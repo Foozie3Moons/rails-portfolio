@@ -1,0 +1,42 @@
+@media screen and (max-width: 1023px) {
+
+  .headshot {
+    border-radius: 50%;
+    max-width: 150px;
+    max-height: 150px;
+    margin: 0 auto;
+  }
+  .navbar-burger.burger {
+    color: white !important;
+    background-color: #212121 !important;
+  }
+
+  .navbar-burger.burger.is-active {
+
+  }
+
+  .navbar-menu {
+    position: absolute;
+    width: 100vw;
+    z-index: 999;
+  }
+
+  .is-active {
+    background-color: #76FF03 !important;
+    color: #212121 !important;
+  }
+
+  .navbar-item:not(.is-active) {
+    color: #E3E3E3 !important;
+  }
+
+  .navbar-item:not(.is-active):hover {
+    background-color: #64DD17 !important;
+    color: #212121 !important;
+  }
+
+  .full-height {
+    height:20vh;
+  }
+
+}
