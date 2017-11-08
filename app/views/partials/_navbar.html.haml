@@ -3,23 +3,33 @@
     .navbar-brand
       = link_to root_path, class: ['navbar-item', 'logo', active_class(root_path)] do
         %h1.is-4 Matthew Bell
-      %span#nav-menu.navbar-burger.burger{"data-target" => "navbarMenu"}
+      %span#nav-menu.navbar-burger.burger{'data-target' => 'navbarMenu'}
         %span
         %span
         %span
     #navbarMenu.navbar-menu
       .navbar-end
-        = link_to 'About', about_bio_path, class: ['navbar-item', active_class(about_bio_path), active_class(about_fun_path), active_class(about_skills_path)]
+        .navbar-item.has-dropdown.is-hoverable{class: [active_class_dropdown(about_bio_path), active_class_dropdown(about_skills_path), active_class_dropdown(about_fun_path)]}
+          = link_to 'About', '', class: ['navbar-link','navbar-item']
+          .navbar-dropdown
+            = link_to 'Bio', about_bio_path,
+              class: ['navbar-item', 'dropdown-item', active_class(about_bio_path)]
+            = link_to 'Skills', about_skills_path,
+              class: ['navbar-item', 'dropdown-item', active_class(about_skills_path)]
+            = link_to 'Fun', about_fun_path,
+              class: ['navbar-item', 'dropdown-item', active_class(about_fun_path)]
+
+
         = link_to 'Portfolio', portfolio_path, class: ['navbar-item', active_class(portfolio_path)]
         = link_to 'Contact', contact_path, class: ['navbar-item', active_class(contact_path)]
         = link_to 'https://docs.google.com/document/d/1y1wuTUYcFweni8Z5lnJ0UKEMCcn2ZHRDiks8Tyw1lec/edit?usp=sharing', |
           target: :_blank,                                                                                            |
           class: 'navbar-item bold' do                                                                                |
           Resume 
-          %i.fa.fa-arrow-right{"aria-hidden" => "true"}
-        = link_to "https://www.linkedin.com/in/matthew-bell-290/", |
+          %i.fa.fa-arrow-right{'aria-hidden' => 'true'}
+        = link_to 'https://www.linkedin.com/in/matthew-bell-290/', |
           target: :_blank,                                         |
           class: 'navbar-item' do                                  |
-          %i.fa.fa-linkedin{"aria-hidden" => "true"}>
+          %i.fa.fa-linkedin{'aria-hidden' => 'true'}>
            
-          %i.fa.fa-arrow-right{"aria-hidden" => "true"}
+          %i.fa.fa-arrow-right{'aria-hidden' => 'true'}

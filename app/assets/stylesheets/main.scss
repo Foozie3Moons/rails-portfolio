@@ -5,20 +5,45 @@
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
+$primary: #76FF03;
+$primary-dark: #64DD17;
+$primary-darker: #3C840D;
+$secondary: #212121;
+$secondary-light: #E3E3E3;
+
+@mixin disabled-button() {
+  color: #76FF03;
+  border-color: #76FF03;
+  background-color: inherit;
+}
+
 .hero.is-dark.is-bold {
   background-image: none;
 }
 
+.navbar-dropdown {
+  background-color: $secondary;
+  color: white;
+}
+
+.navbar-item.has-dropdown.is-hoverable {
+  color: white;
+}
+
+.navbar-link::after {
+  border: none;
+}
+
+.navbar-item.has-dropdown.is-hoverable:hover>a {
+  background-color: $primary-dark;
+}
+
 .primary {
-  color: #76FF03;
+  color: $primary;
 }
 
 .hero.is-dark {
-  background-color: rgba(0,0,0,.7);
-}
-
-.underline a:hover {
-  border-bottom: 3px solid #76FF03;
+  background-color: rgba(0,0,0,.8);
 }
 
 .hero-body {
@@ -26,11 +51,11 @@
 }
 
 li.is-active * {
-  color: #212121 !important;
+  color: $secondary !important;
 }
 
 .tabs li:hover {
-  background-color: #64DD17;
+  background-color: $primary-dark;
 }
 
 .persistent-container {
@@ -41,7 +66,7 @@ li.is-active * {
   background-color: rgba(255,255,255,.7);
   color: black;
   border-radius: 5px 5px 0 0;
-  border: #212121;
+  border: $secondary;
 }
 
 .bold {
@@ -62,8 +87,8 @@ li.is-active * {
   background-color: white;
 }
 
-span.primary.bold a:hover {
-  border-bottom: 2px solid #76FF03;
+a span.primary.bold:hover {
+  color:  !important;
 }
 
 .scrollable::-webkit-scrollbar-track {
@@ -75,7 +100,7 @@ span.primary.bold a:hover {
 .scrollable::-webkit-scrollbar-thumb {
   border-radius: 10px;
   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
-  background-color: #76FF03;
+  background-color: $primary-dark;
 }
 
 .full-height {
@@ -97,13 +122,13 @@ span.primary.bold a:hover {
 }
 
 .hexagon .fill {
-  fill: #76FF03;
+  fill: $primary;
 }
 
 .mesh {
   fill: none;
-  stroke: #000;
-  stroke-opacity: .2;
+  stroke: #000 ;
+  stroke-opacity: 1;
   pointer-events: none;
 }
 
@@ -142,9 +167,9 @@ span.primary.bold a:hover {
   margin-bottom: 1em;
 }
 
-.is-active {
-  background-color: #76FF03 !important;
-  color: #212121 !important;
+.is-active, .is-active-dropdown {
+  background-color: $primary !important;
+  color: $secondary !important;
 }
 
 .has-text-left-aligned {
@@ -152,8 +177,8 @@ span.primary.bold a:hover {
 }
 
 .navbar-item:not(.is-active):hover {
-  background-color: #64DD17 !important;
-  color: #212121 !important;
+  background-color: $primary-dark !important;
+  color: $secondary !important;
 }
 
 .about-me * {
@@ -161,14 +186,22 @@ span.primary.bold a:hover {
 }
 
 .button.is-info.is-outlined {
-  color: #76FF03;
-  border-color: #76FF03;
+  color: $primary;
+  border-color: $primary;
 }
 
 .button.is-info.is-outlined:hover {
-  background-color: #76FF03;
-  border-color: #76FF03;
-  color: #212121;
+  background-color: $primary;
+  border-color: $primary;
+  color: $secondary;
+}
+
+.button.is-info.is-outlined[disabled=disabled] {
+  @include disabled-button();
+}
+
+.button.is-info.is-outlined[disabled=disabled]:hover {
+  @include disabled-button();
 }
 
 .logo {
@@ -210,17 +243,17 @@ span.primary.bold a:hover {
   }
 
   .is-active {
-    background-color: #76FF03 !important;
-    color: #212121 !important;
+    background-color: $primary !important;
+    color: $secondary !important;
   }
 
   .navbar-item:not(.is-active) {
-    color: #E3E3E3 !important;
+    color: $secondary-light !important;
   }
 
   .navbar-item:not(.is-active):hover {
-    background-color: #64DD17 !important;
-    color: #212121 !important;
+    background-color: $primary !important;
+    color: $secondary !important;
   }
 
   .full-height {

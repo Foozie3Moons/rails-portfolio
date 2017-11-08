@@ -1,8 +1,8 @@
 $(document).on('turbolinks:load', function() {
   $('#index-persistent').hide();
   $('#index-persistent-text').css('visibility','hidden');
-  $('#about').css('visibility','hidden');
-  $('#portfolio').hide();
+  // $('#about').css('visibility','hidden');
+  // $('#portfolio').hide();
 
   setTimeout(function () {
     $('#index-persistent').show().addClass('animated fadeIn');

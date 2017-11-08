@@ -1,9 +1,9 @@
 %h1.title.is-2.has-text-left-aligned Portfolio
-.scrollable.has-text-left-aligned
+.scrollable.has-text-left-aligned.content
   .columns.is-vcentered
     .column.is-6
-      %h2.title.is-5 Rails Calendar Organizer
-      %h3.primary.bold Ruby, Ruby on Rails, D3.js, PostgreSQL, Bulma
+      %h1.title.is-3 Sheet2Cal Calendar Organizer
+      %span.primary.bold Python, Django, Handsontable, PostgreSQL, Bulma
       %p
         Using
         %span.primary.bold Handsontable
@@ -11,14 +11,32 @@
       %p
         = link_to 'Github', 'https://github.com/Foozie3Moons/sheet-to-cal',
           class: ['button', 'is-small', 'is-info', 'is-outlined'], target: :_blank
-        = link_to 'Website', 'https://habitrackapp.herokuapp.com',
-          class: ['button', 'is-small', 'is-info', 'is-outlined'], target: :_blank
+        = link_to 'Website', '',
+          class: ['button', 'is-small', 'is-info', 'is-outlined'], disabled: true
     .column.is-6
-      = link_to 'https://sheet2cal.herokuapp.com', target: :_blank do
+      = link_to_if false, 'https://sheet2cal.herokuapp.com', target: :_blank do
         = image_tag 'transparent-laptop'
   .columns.is-vcentered
     .column.is-6
-      %h1.title.is-5 Habitrack
+      %h1.title.is-3 Recursively Referenced Rails Portfolio
+      %span.primary.bold Ruby, Ruby on Rails, HAML, D3.js, Bulma, SASS
+      %p
+        A full stack app using
+        %span.primary.bold Ruby on Rails.
+        It currently does not use
+        %span.primary.bold PostgreSQL
+        but it is set up to use it.
+      %p
+        = link_to 'Github', 'https://github.com/Foozie3Moons/rails-portoflio',
+          class: ['button', 'is-small', 'is-info', 'is-outlined'], target: :_blank
+        = link_to 'Website', 'https://mjbell.herokuapp.com',
+          class: ['button', 'is-small', 'is-info', 'is-outlined'], target: :_blank
+    .column.is-6
+      = link_to 'https://mjbell.herokuapp.com', target: :_blank do
+        = image_tag 'transparent-laptop'
+  .columns.is-vcentered
+    .column.is-6
+      %h1.title.is-3 Habitrack
       %span.primary.bold MongoDB, Express, React, Node.js (MERN), D3.js, Material UI
       %p
         A group collaboration habit tracker using
@@ -35,8 +53,8 @@
 
   .columns.is-vcentered
     .column.is-6
-      %h2.title.is-5 Eoen Loan Calculator
-      %h3.primary.bold Node.js, PostgreSQL, D3.js, Semantic UI
+      %h1.title.is-3 Eoen Loan Calculator
+      %span.primary.bold Node.js, Jade/Pug, PostgreSQL, D3.js, Semantic UI
       %p
         This is a pet project of mine. Calculating loan data from user input, saving the user's data, and visualizing it with
         %span.primary.bold D3.
@@ -54,7 +72,7 @@
         = image_tag 'eoen_screenshot'
   .columns.is-vcentered
     .column.is-6
-      %h2.title.is-5 CostuME (React Hackathon)
+      %h1.title.is-3 CostuME (React Hackathon)
       %span.primary.bold React
       %p
         A fully functional
@@ -73,7 +91,7 @@
 
   .columns.is-vcentered
     .column.is-6
-      %h2.title.is-5 Checkers
+      %h1.title.is-3 Checkers
       %span.primary.bold jQuery, Javascript (ES5)
       %p
         A purely
