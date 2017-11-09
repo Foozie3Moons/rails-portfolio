@@ -17,6 +17,10 @@ $secondary-light: #E3E3E3;
   background-color: inherit;
 }
 
+html {
+  background-color: black;
+}
+
 .title {
   font-family: Helvetica;
 }
@@ -46,6 +50,7 @@ $secondary-light: #E3E3E3;
 .navbar-item.has-dropdown.is-hoverable:hover>a {
   background-color: $primary-dark;
 }
+
 .navbar-item.has-dropdown.is-hoverable.is-active-dropdown:hover {
   background-color: $primary;
 }
@@ -129,7 +134,7 @@ a span.primary.bold:hover {
 }
 
 .full-height {
-  height:73vh;
+  height:65vh;
 }
 
 .hexagon {
@@ -169,7 +174,7 @@ a span.primary.bold:hover {
 }
 
 .background-svg {
-  position:absolute;
+  position:fixed;
   z-index: -1;
   top:0;
   left:0;
