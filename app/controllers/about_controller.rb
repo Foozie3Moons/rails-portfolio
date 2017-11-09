@@ -5,6 +5,9 @@ class AboutController < ApplicationController
   def skills
   end
 
-  def fun
+  def testimonials
+  end
+
+  def life
   end
 end
