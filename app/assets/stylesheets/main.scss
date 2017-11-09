@@ -184,7 +184,7 @@ a span.primary.bold:hover {
   color: $secondary !important;
 }
 
-.is-active-dropdown:hover>a, .is-active-dropdown:hover {
+.is-active-dropdown:hover > a, .is-active-dropdown:hover {
   background-color: $primary !important;
   color: $secondary !important;
 }
@@ -290,4 +290,42 @@ embed {
     overflow-x: hidden;
     height: 400px;
   }
+}
+
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+    .is-active-dropdown {
+      color: $secondary !important;
+    }
+
+    .has-dropdown.is-active-dropdown.is-hoverable.navbar-item > a {
+      color: $secondary !important;
+    }
+
+    #persistent-container {
+      display: none;
+    }
+
+    #about-tabs-phone {
+      display: none;
+    }
+
+    #footer-phone {
+      display: none;
+    }
+
+    .scrollable {
+      height: 80vh;
+      margin-top: 1em;
+      margin-bottom: 0;
+    }
+
+    .title.is-2 {
+
+    }
+
 }

@@ -1,17 +1,24 @@
-.tabs.is-centered.is-fullwidth
-  %ul
-    %li{:class => active_class(about_bio_path)}
-      = link_to about_bio_path do
-        %span.icon.is-small
-          %i.fa.fa-user-circle
-        %span Bio
-    %li{:class => active_class(about_skills_path)}
-      = link_to about_skills_path do
-        %span.icon.is-small
-          %i.fa.fa-wrench
-        %span Skills
-    %li{:class => active_class(about_fun_path)}
-      = link_to about_fun_path do
-        %span.icon.is-small
-          %i.fa.fa-futbol-o
-        %span Fun
+.tabs.is-centered.is-fullwidth#about-tabs-phone
+  %ul.columns
+    .column
+      %li{:class => active_class(about_bio_path)}
+        = link_to about_bio_path do
+          %span.icon.is-small
+            %i.fa.fa-user-circle
+          %span Bio
+      %li{:class => active_class(about_skills_path)}
+        = link_to about_skills_path do
+          %span.icon.is-small
+            %i.fa.fa-wrench
+          %span Skills
+    .column
+      %li{:class => active_class(about_testimonials_path)}
+        = link_to about_testimonials_path do
+          %span.icon.is-small
+            %i.fa.fa-comments
+          %span Testimonials
+      %li{:class => active_class(about_fun_path)}
+        = link_to about_fun_path do
+          %span.icon.is-small
+            %i.fa.fa-futbol-o
+          %span Fun
