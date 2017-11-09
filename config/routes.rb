@@ -6,7 +6,9 @@ Rails.application.routes.draw do
 
   get 'about/skills'
 
-  get 'about/fun'
+  get 'about/testimonials'
+
+  get 'about/life'
 
   get 'contact' => 'main#contact'
 
