@@ -37,6 +37,9 @@ $secondary-light: #E3E3E3;
 .navbar-item.has-dropdown.is-hoverable:hover>a {
   background-color: $primary-dark;
 }
+.navbar-item.has-dropdown.is-hoverable.is-active-dropdown:hover {
+  background-color: $primary;
+}
 
 .primary {
   color: $primary;
@@ -81,6 +84,15 @@ li.is-active * {
 
 .scrollable::-webkit-scrollbar {
   width: 12px;
+}
+
+.scrollable:after {
+  content:'';
+  width:20%;
+  height:4px;
+  background: $primary-dark;
+  position:absolute;
+  bottom:-4px;
 }
 
 .bg-white {
@@ -172,6 +184,11 @@ a span.primary.bold:hover {
   color: $secondary !important;
 }
 
+.is-active-dropdown:hover>a, .is-active-dropdown:hover {
+  background-color: $primary !important;
+  color: $secondary !important;
+}
+
 .has-text-left-aligned {
   text-align: left;
 }
@@ -218,6 +235,11 @@ a span.primary.bold:hover {
 .headshot.thumbnail {
   max-width: 150px;
   max-height: 150px;
+}
+
+embed {
+  height: 60vh;
+  width: 100%;
 }
 
 @media screen and (max-width: 1023px) {

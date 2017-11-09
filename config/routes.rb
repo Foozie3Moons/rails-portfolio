@@ -14,5 +14,11 @@ Rails.application.routes.draw do
 
   get 'portfolio' => 'main#portfolio'
 
+  get 'resume' => 'main#resume'
+
+  get 'pdf' => 'main#pdf'
+
+  get 'pdf/download' => 'main#pdf_download'
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

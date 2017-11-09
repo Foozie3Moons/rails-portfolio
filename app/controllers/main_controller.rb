@@ -16,6 +16,20 @@ class MainController < ApplicationController
     redirect_to contact_path
   end
 
+  def resume
+  end
+
+  def pdf
+    pdf_filename = File.join(Rails.root, "app/assets/files/Matthew_Bell.pdf")
+    send_file(pdf_filename, :disposition => 'inline', :filename => "Matthew_Bell.pdf", :type => "application/pdf")
+  end
+
+  def pdf_download
+    pdf_filename = File.join(Rails.root, "app/assets/files/Matthew_Bell.pdf")
+    send_file(pdf_filename, :filename => "Matthew_Bell.pdf", :type => "application/pdf")
+    redirect_to resume_path
+  end
+
   def portfolio
   end
 end

@@ -10,7 +10,7 @@
     #navbarMenu.navbar-menu
       .navbar-end
         .navbar-item.has-dropdown.is-hoverable{class: [active_class_dropdown(about_bio_path), active_class_dropdown(about_skills_path), active_class_dropdown(about_fun_path)]}
-          = link_to 'About', '', class: ['navbar-link','navbar-item']
+          %a.navbar-link.navbar-item About
           .navbar-dropdown
             = link_to 'Bio', about_bio_path,
               class: ['navbar-item', 'dropdown-item', active_class(about_bio_path)]
@@ -22,14 +22,11 @@
 
         = link_to 'Portfolio', portfolio_path, class: ['navbar-item', active_class(portfolio_path)]
         = link_to 'Contact', contact_path, class: ['navbar-item', active_class(contact_path)]
-        = link_to 'https://docs.google.com/document/d/1y1wuTUYcFweni8Z5lnJ0UKEMCcn2ZHRDiks8Tyw1lec/edit?usp=sharing', |
-          target: :_blank,                                                                                            |
-          class: 'navbar-item bold' do                                                                                |
-          Resume 
-          %i.fa.fa-arrow-right{'aria-hidden' => 'true'}
-        = link_to 'https://www.linkedin.com/in/matthew-bell-290/', |
-          target: :_blank,                                         |
-          class: 'navbar-item' do                                  |
-          %i.fa.fa-linkedin{'aria-hidden' => 'true'}>
+        = link_to 'Resume', resume_path,                                                                                |
+          class: 'navbar-item bold'
+        = link_to 'https://www.linkedin.com/in/matthew-bell-290/',
+          target: :_blank,
+          class: 'navbar-item' do
+          %i.fa.fa-linkedin-square.fa-2x{'aria-hidden' => 'true'}>
            
           %i.fa.fa-arrow-right{'aria-hidden' => 'true'}
