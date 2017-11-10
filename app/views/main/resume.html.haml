@@ -1,5 +1,5 @@
 %h1.title.is-1 Resume
-%embed{:src => pdf_path, :type => 'application/pdf'}
+= render file: pdf_path
 %hr
-= link_to 'Full Screen', pdf_path, :class => ['button', 'is-info', 'is-outlined']
+= link_to 'Full Screen', pdf_path, :class => ['button', 'is-info', 'is-outlined'], :target => :_blank
 = link_to 'Download', pdf_download_path, :class => ['button', 'is-info', 'is-outlined']

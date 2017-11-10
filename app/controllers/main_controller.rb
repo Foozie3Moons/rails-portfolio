@@ -14,6 +14,7 @@ class MainController < ApplicationController
   end
 
   def resume
+    @pdf = "app/assets/files/matthew_bell_without_phone_number.pdf"
   end
 
   def pdf
