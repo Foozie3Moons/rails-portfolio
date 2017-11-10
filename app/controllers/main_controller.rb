@@ -18,7 +18,7 @@ class MainController < ApplicationController
   end
 
   def pdf
-    pdf_filename = File.join(Rails.root, "app/assets/files/matthew_bell_without_phone_number.pdf")
+    pdf_filename = File.join(Rails.root, "app/assets/files/matthew_bell_with_phone_number.pdf")
     send_file(pdf_filename, :disposition => 'inline', :filename => "Matthew_Bell.pdf", :type => "application/pdf")
   end
 
