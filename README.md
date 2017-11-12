@@ -9,5 +9,5 @@ as published by the Free Software Foundation, either version 3 of the License, o
 
 I encourage anyone to get inspiration for their own portfolio using this repo. If you do end up using a large part of my code, please make sure that you give me a nod in your readme.
 
-#Thank You
-Mike Bostock for the beautiful looking [D3 background](https://bl.ocks.org/mbostock/5249328)
+# Acknowledgements
+Thank you Mike Bostock for the beautiful looking [D3 visualization](https://bl.ocks.org/mbostock/5249328)
