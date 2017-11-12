@@ -1,7 +1,7 @@
 %nav.navbar
   .container
     .navbar-brand
-      = link_to root_path, class: ['navbar-item', 'logo', active_class(root_path)] do
+      = link_to root_path, class: ['navbar-item', 'logo', is_active?(root_path)] do
         %h1.is-4 Matthew Bell
       %span#nav-menu.navbar-burger.burger{'data-target' => 'navbarMenu'}
         %span
@@ -9,21 +9,21 @@
         %span
     #navbarMenu.navbar-menu
       .navbar-end
-        .navbar-item.has-dropdown.is-hoverable{class: [active_class_dropdown(about_bio_path), active_class_dropdown(about_skills_path), active_class_dropdown(about_life_path)]}
-          %a.navbar-link.navbar-item About
+        .navbar-item.has-dropdown.is-hoverable{class: about_is_active?}
+          %a.navbar-link.navbar-item.bold About
           .navbar-dropdown
             = link_to 'Bio', about_bio_path,
-              class: ['navbar-item', 'dropdown-item', active_class(about_bio_path)]
+              class: ['navbar-item', 'dropdown-item', is_active?(about_bio_path)]
             = link_to 'Skills', about_skills_path,
-              class: ['navbar-item', 'dropdown-item', active_class(about_skills_path)]
+              class: ['navbar-item', 'dropdown-item', is_active?(about_skills_path)]
             = link_to 'Testimonials', about_testimonials_path,
-              class: ['navbar-item', 'dropdown-item', active_class(about_testimonials_path)]
+              class: ['navbar-item', 'dropdown-item', is_active?(about_testimonials_path)]
             = link_to 'Life', about_life_path,
-              class: ['navbar-item', 'dropdown-item', active_class(about_life_path)]
+              class: ['navbar-item', 'dropdown-item', is_active?(about_life_path)]
 
 
-        = link_to 'Portfolio', portfolio_path, class: ['navbar-item', active_class(portfolio_path)]
-        = link_to 'Contact', contact_path, class: ['navbar-item', active_class(contact_path)]
+        = link_to 'Portfolio', portfolio_path, class: ['navbar-item', 'bold', is_active?(portfolio_path)]
+        = link_to 'Contact', contact_path, class: ['navbar-item', 'bold', is_active?(contact_path)]
         = link_to 'Resume', resume_path,                                                                                |
           class: 'navbar-item bold'
         = link_to 'https://www.linkedin.com/in/matthew-bell-290/',

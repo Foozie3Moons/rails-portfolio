@@ -21,6 +21,11 @@ html {
   background-color: black;
 }
 
+.link {
+  color: $primary !important;
+  text-decoration: underline;
+}
+
 .title {
   font-family: Helvetica;
 }

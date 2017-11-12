@@ -1,24 +1,13 @@
-# README
+# Matthew Bell's Rails 5 Portfolio
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Copyright (C) 2017 Matthew Bell
 
-Things you may want to cover:
+This program is free software: you can redistribute it and/or modify
+it under the terms of the [GNU General Public License](https://www.gnu.org/licenses/gpl-3.0.en.html)
+as published by the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
 
-* Ruby version
+I encourage anyone to get inspiration for their own portfolio using this repo. If you do end up using a large part of my code, please make sure that you give me a nod in your readme.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+#Thank You
+Mike Bostock for the beautiful looking [D3 background](https://bl.ocks.org/mbostock/5249328)
