@@ -2,19 +2,24 @@
 .scrollable.has-text-left-aligned.content
   .columns.is-vcentered
     .column.is-6
-      %h1.title.is-3 Sheet2Cal Calendar Organizer
-      %span.primary.bold Ruby, Ruby on Rails, Handsontable, PostgreSQL, Bulma
+      %h1.title.is-3 Handsome Scheduler
+      %span.primary.bold Ruby, Ruby on Rails, React, Webpacker, Google OAuth, Handsontable, PostgreSQL, Bulma
       %p
         Using
-        %span.primary.bold Handsontable
-        as a data input to allow for bulk insertion of calendar events using a familiar spreadsheet input.
+        %span.primary.bold Handsontable's React Wrapper
+        as a data input to allow for bulk insertion of
+        %span.primary.bold Google Calendar
+        events using a familiar spreadsheet input. View your calendar events without having to navigate
+        to Google using the
+        %span.primary.bold FullCalendar.io
+        calendar library.
       %p
-        = link_to 'Github', 'https://github.com/Foozie3Moons/sheet-to-cal',
+        = link_to 'Github', 'https://github.com/Foozie3Moons/handsome-scheduler',
           class: ['button', 'is-small', 'is-info', 'is-outlined'], target: :_blank
         = link_to 'Website', '',
-          class: ['button', 'is-small', 'is-info', 'is-outlined'], disabled: true
+          class: ['button', 'is-small', 'is-info', 'is-outlined'], target: :_blank
     .column.is-6
-      = link_to_if false, 'https://sheet2cal.herokuapp.com', target: :_blank do
+      = link_to 'https://handsome-scheduler.herokuapp.com', target: :_blank do
         = image_tag 'transparent-laptop'
   .columns.is-vcentered
     .column.is-6
