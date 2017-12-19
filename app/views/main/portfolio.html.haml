@@ -34,7 +34,7 @@
       %p
         = link_to 'Github', 'https://github.com/Foozie3Moons/rails-portoflio',
           class: ['button', 'is-small', 'is-info', 'is-outlined'], target: :_blank
-        = link_to 'Website', 'https://mjbell.herokuapp.com',
+        = link_to_if 'false', 'Website', 'https://mjbell.io',
           class: ['button', 'is-small', 'is-info', 'is-outlined'], target: :_blank
     .column.is-6
       = link_to 'https://mjbell.io', target: :_blank do
