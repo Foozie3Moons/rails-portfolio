@@ -1,13 +1,14 @@
 $(document).on('turbolinks:load', function() {
   topology = getTopology($(document).width(),$(document).height(),20)
   draw(topology);
-  interval = setInterval(function() {
-    topology = getTopology($(document).width(),$(document).height(),20)
-    draw(topology);
-  },10000);
+  /* interval = setInterval(function() {
+   *  topology = getTopology($(document).width(),$(document).height(),20)
+   *  draw(topology);
+   * },10000);
+   */
 });
 $(document).on('turbolinks:click', function() {
-  clearInterval(interval);
+  // clearInterval(interval);
 });
 
 function getTopology(width, height, radius) {
