@@ -10,7 +10,7 @@
     #navbarMenu.navbar-menu
       .navbar-end
         .navbar-item.has-dropdown.is-hoverable{class: about_is_active?}
-          %a.navbar-link.navbar-item.bold About
+          %a.navbar-link.navbar-item About
           .navbar-dropdown
             = link_to 'Bio', about_bio_path,
               class: ['navbar-item', 'dropdown-item', is_active?(about_bio_path)]
@@ -21,13 +21,12 @@
             = link_to 'Life', about_life_path,
               class: ['navbar-item', 'dropdown-item', is_active?(about_life_path)]
 
-
-        = link_to 'Portfolio', portfolio_path, class: ['navbar-item', 'bold', is_active?(portfolio_path)]
-        = link_to 'Contact', contact_path, class: ['navbar-item', 'bold', is_active?(contact_path)]
-        = link_to 'Resume', resume_path, class: ['navbar-item', 'bold', is_active?(resume_path)]
+        = link_to 'Portfolio', portfolio_path, class: ['navbar-item', is_active?(portfolio_path)]
+        = link_to 'Contact', contact_path, class: ['navbar-item', is_active?(contact_path)]
+        = link_to 'Resume', resume_path, class: ['navbar-item', is_active?(resume_path)]
         = link_to 'https://www.linkedin.com/in/matthew-bell-290/',
           target: :_blank,
           class: 'navbar-item' do
-          %i.fa.fa-linkedin-square.fa-2x{'aria-hidden' => 'true'}>
-           
+          %i.fa.fa-linkedin-square.fa-2x{'aria-hidden' => 'true'}
+          &nbsp;
           %i.fa.fa-arrow-right{'aria-hidden' => 'true'}
