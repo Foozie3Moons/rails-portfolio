@@ -16,13 +16,7 @@
     #navbarMenu.navbar-menu
       .navbar-end
         .navbar-item.has-dropdown.is-hoverable{class: about_is_active?}
-          %a.navbar-link.navbar-item About
-          .navbar-dropdown
-            = link_to 'Bio', about_bio_path,
-              class: ['navbar-item', 'dropdown-item', is_active?(about_bio_path)]
-            = link_to 'Life', about_life_path,
-              class: ['navbar-item', 'dropdown-item', is_active?(about_life_path)]
-
+          =link_to 'About', about_bio_path, class: ['navbar-item', about_is_active?]
         = link_to 'Portfolio', portfolio_path, class: ['navbar-item', is_active?(portfolio_path)]
         = link_to 'Testimonials', testimonials_path, class: ['navbar-item', is_active?(testimonials_path)]
         = link_to 'Contact', contact_path, class: ['navbar-item', is_active?(contact_path)]
