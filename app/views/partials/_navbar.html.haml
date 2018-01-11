@@ -20,15 +20,11 @@
           .navbar-dropdown
             = link_to 'Bio', about_bio_path,
               class: ['navbar-item', 'dropdown-item', is_active?(about_bio_path)]
-            = link_to 'Skills', about_skills_path,
-              class: ['navbar-item', 'dropdown-item', is_active?(about_skills_path)]
-            = link_to 'Testimonials', about_testimonials_path,
-              class: ['navbar-item', 'dropdown-item', is_active?(about_testimonials_path)]
             = link_to 'Life', about_life_path,
               class: ['navbar-item', 'dropdown-item', is_active?(about_life_path)]
 
         = link_to 'Portfolio', portfolio_path, class: ['navbar-item', is_active?(portfolio_path)]
-        = link_to 'Testimonials', about_testimonials_path, class: ['navbar-item', is_active?(about_testimonials_path)]
+        = link_to 'Testimonials', testimonials_path, class: ['navbar-item', is_active?(testimonials_path)]
         = link_to 'Contact', contact_path, class: ['navbar-item', is_active?(contact_path)]
         = link_to 'Resume', resume_path, class: ['navbar-item', is_active?(resume_path)]
         = link_to 'https://www.linkedin.com/in/matthew-bell-290/',

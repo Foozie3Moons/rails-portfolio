@@ -6,8 +6,6 @@ Rails.application.routes.draw do
 
   get 'about/skills'
 
-  get 'about/testimonials'
-
   get 'about/life'
 
   get 'contact' => 'main#contact'
@@ -15,6 +13,8 @@ Rails.application.routes.draw do
   post 'contact' => 'main#send_mail'
 
   get 'portfolio' => 'main#portfolio'
+
+  get 'testimonials' => 'main#testimonials'
 
   get 'resume' => 'main#resume'
 

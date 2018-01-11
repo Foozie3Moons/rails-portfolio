@@ -6,12 +6,12 @@
       .column.is-8.is-offset-1
         = yield
   - elsif portfolio_page?
-    .columns.is-vcentered.scrollable
+    .columns.is-vcentered
       .column.is-4
         = render :partial => 'partials/skills'
-      .column.is-8
+      .column.is-8.scrollable
         = yield
   - else
     .columns.is-vcentered
-      .column
+      .column.is-12
         = yield

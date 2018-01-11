@@ -5,6 +5,9 @@ class MainController < ApplicationController
   def contact
   end
 
+  def testimonials
+  end
+
   def send_mail
     data = params[:body]
     subject = params[:subject]
