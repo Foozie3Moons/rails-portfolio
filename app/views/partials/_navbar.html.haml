@@ -1,8 +1,14 @@
 %nav.navbar
   .container
     .navbar-brand
-      = link_to root_path, class: ['navbar-item', 'logo', is_active?(root_path)] do
-        %h1.is-4 Matthew Bell
+      .navbar-item.brand
+        - if request.fullpath != root_path
+          %div
+            %h1.title.is-3.bold Matthew Bell&nbsp;
+          |&nbsp;
+          %div
+            %h1.primary.is-6.primary.bold
+              Full Stack Ruby Developer
       %span#nav-menu.navbar-burger.burger{'data-target' => 'navbarMenu'}
         %span
         %span
@@ -22,6 +28,7 @@
               class: ['navbar-item', 'dropdown-item', is_active?(about_life_path)]
 
         = link_to 'Portfolio', portfolio_path, class: ['navbar-item', is_active?(portfolio_path)]
+        = link_to 'Testimonials', about_testimonials_path, class: ['navbar-item', is_active?(about_testimonials_path)]
         = link_to 'Contact', contact_path, class: ['navbar-item', is_active?(contact_path)]
         = link_to 'Resume', resume_path, class: ['navbar-item', is_active?(resume_path)]
         = link_to 'https://www.linkedin.com/in/matthew-bell-290/',

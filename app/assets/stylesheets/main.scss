@@ -60,7 +60,7 @@ html {
 }
 
 .primary {
-  color: $primary;
+  color: $primary !important;
 }
 
 .primary-dark {
@@ -95,7 +95,7 @@ li.is-active * {
 }
 
 .bold {
-  font-weight: bold;
+  font-weight: bold !important;
 }
 
 .scrollable {
@@ -106,15 +106,6 @@ li.is-active * {
 
 .scrollable::-webkit-scrollbar {
   width: 12px;
-}
-
-.scrollable:after {
-  content:'';
-  width:20%;
-  height:4px;
-  background: $primary-dark;
-  position:absolute;
-  bottom:-4px;
 }
 
 .bg-white {
@@ -215,7 +206,7 @@ a span.primary.bold:hover {
   text-align: left;
 }
 
-.navbar-item:not(.is-active):hover {
+.navbar-item:not(.is-active, .brand):hover {
   background-color: $primary-dark !important;
   color: $secondary !important;
 }

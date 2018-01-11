@@ -2,8 +2,6 @@ module AboutHelper
   def about_is_active?
     paths = [
       about_bio_path,
-      about_skills_path,
-      about_testimonials_path,
       about_life_path
     ]
     paths.each do |path|

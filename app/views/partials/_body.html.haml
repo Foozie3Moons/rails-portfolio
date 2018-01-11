@@ -1,6 +1,17 @@
 .container.has-text-centered
-  .columns.is-vcentered
-    .column.is-3.animated.fadeInLeft#persistent-container{'data-turbolinks-permanent' => ''}
-      = render :partial => 'partials/persistent_section'
-    .column.is-8.is-offset-1
-      = yield
+  - if about_page?
+    .columns.is-vcentered
+      .column.is-3.animated.fadeInLeft#persistent-container{'data-turbolinks-permanent' => ''}
+        = render :partial => 'partials/persistent_section'
+      .column.is-8.is-offset-1
+        = yield
+  - elsif portfolio_page?
+    .columns.is-vcentered.scrollable
+      .column.is-4
+        = render :partial => 'partials/skills'
+      .column.is-8
+        = yield
+  - else
+    .columns.is-vcentered
+      .column
+        = yield

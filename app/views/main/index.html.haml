@@ -1,7 +1,13 @@
 .container.has-text-centered
-  .columns.is-vcentered
-    .column.is-6.is-offset-3#index-persistent
-      = render :partial => 'partials/persistent_section'
-      %p#index-persistent-text
-        Standardization and optimization make happy clients and programmers.
-        Learning and engineering ways to make that a reality is a passion of mine.
+  .tile.is-ancestor
+    .tile.is-3
+    .tile.is-vertical.is-6
+      .tile
+        .tile.is-parent.is-vertical
+          %article.tile.is-child#index-persistent
+            = render :partial => 'partials/persistent_section_without_headshot'
+          %article.tile.is-child#index-persistent-text
+            Standardization and optimization make happy clients and programmers.
+            Learning and engineering ways to make that a reality is a passion of mine.
+          %article.tile.is-child#index-persistent-text
+            = link_to 'View My Portfolio', portfolio_path, class: ['button', 'is-medium', 'is-info', 'is-outlined']
