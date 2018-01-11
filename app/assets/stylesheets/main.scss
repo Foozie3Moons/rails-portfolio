@@ -251,8 +251,8 @@ a span.primary.bold:hover {
 }
 
 embed {
-  height: 60vh;
-  width: 100%;
+  height: 65vh;
+  width: 75%;
 }
 
 blockquote {
@@ -263,8 +263,8 @@ blockquote {
 @media screen and (max-width: 1023px) {
   .headshot {
     border-radius: 50%;
-    max-width: 150px;
-    max-height: 150px;
+    max-width: 100px;
+    max-height: 100px;
     margin: 0 auto;
   }
   .navbar-burger.burger {
@@ -303,6 +303,13 @@ blockquote {
 }
 
 @media screen and (max-width: 1023px) {
+  .navbar-brand .navbar-item {
+    display: block;
+  }
+  .title-separator {
+    display: none;
+  }
+
   .scrollable {
     overflow-y: auto;
     overflow-x: hidden;

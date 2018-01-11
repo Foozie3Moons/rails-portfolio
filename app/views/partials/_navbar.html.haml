@@ -1,11 +1,12 @@
 %nav.navbar
   .container
     .navbar-brand
-      .navbar-item.brand
+      .navbar-item.brand.block
         - if request.fullpath != root_path
           %div
             %h1.title.is-3.bold Matthew Bell&nbsp;
-          |&nbsp;
+          %div.title-separator
+            |&nbsp;
           %div
             %h1.primary.is-6.primary.bold
               Full Stack Ruby Developer
