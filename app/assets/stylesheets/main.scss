@@ -21,6 +21,10 @@ html {
   background-color: black;
 }
 
+.vh65 {
+  height: 65vh;
+}
+
 .link {
   color: $primary !important;
   text-decoration: underline;
@@ -31,11 +35,21 @@ html {
 }
 
 .subtitle {
-  font-family: Garamond
+  font-family: Garamond;
+}
+
+.background-opaque {
+  border-radius: 5px;
+  padding: 1em;
+  background-color: rgba(51,54,57,0);
 }
 
 .hero.is-dark.is-bold {
   background-image: none;
+}
+
+.hero-head {
+  background-color: rgba(51,54,57,.95);
 }
 
 .navbar-dropdown {
@@ -68,7 +82,7 @@ html {
 }
 
 .hero.is-dark {
-  background-color: rgba(0,0,0,.8);
+  background-color: rgba(0,0,0,.3);
 }
 
 .hero-body {
@@ -101,7 +115,7 @@ li.is-active * {
 .scrollable {
   overflow-y: auto;
   overflow-x: hidden;
-  height: 600px;
+  height: 65vh;
 }
 
 .scrollable::-webkit-scrollbar {
@@ -133,7 +147,7 @@ a span.primary.bold:hover {
 }
 
 .hexagon {
-  fill: #212121;
+  fill: rgb(51,54,57);
   pointer-events: all;
 }
 
@@ -147,7 +161,8 @@ a span.primary.bold:hover {
 }
 
 .hexagon .fill {
-  fill: $primary;
+  stroke: rgb(89,193,52);
+  stroke-width: 2px;
 }
 
 .mesh {

@@ -1,7 +1,7 @@
-= render :partial => 'partials/about_tabs'
-
-.scrollable.has-text-left-aligned.about.content
-  %h1.title.is-2.first Hi, I'm Matt
+-# = render :partial => 'partials/about_tabs'
+%h1.title.has-text-left-aligned.is-1 About
+.scrollable.has-text-left-aligned.about.content.background-opaque
+  %h1.title.is-2.has-text-left-aligned.first Hi, I'm Matt
   %p.second
     I am a
     %span.primary.bold full stack web developer
@@ -34,9 +34,10 @@
     as I use and develop new technologies to solve problems big and small.
   %h1.title.is-3.fifth Learn More
   %p.sixth
-    = link_to contact_path, :class => ['button', 'is-info', 'is-outlined', 'is-small'] do
-      Reach out via email
-    &nbsp;and check out my
-    = link_to portfolio_path, :class => ['button', 'is-info', 'is-outlined', 'is-small'] do
-      porfolio
-    &nbsp;for a sample of my code. Feel free to ask me any questions.
+    .columns
+      .column.is-3.is-offset-3
+        = link_to 'mailto:matthew.bell.290@gmail.com', :class => ['button', 'is-info', 'is-outlined', 'is-medium'] do
+          Send Me An Email
+      .column.is-3
+        = link_to portfolio_path, :class => ['button', 'is-info', 'is-outlined', 'is-medium'] do
+          View My Portfolio

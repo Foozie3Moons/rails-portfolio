@@ -15,10 +15,7 @@
       .hero-head
         = render :partial => 'partials/navbar'
       .hero-body
-        - if request.fullpath.eql? root_path
-          = yield
-        - else
-          = render :partial => 'partials/body'
+        = render :partial => 'partials/body'
       .hero-foot
         = render :partial => 'partials/footer'
       .background-inner

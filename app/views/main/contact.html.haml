@@ -1,24 +1,26 @@
-%h1.title.is-2 Contact Me
-%section.columns
-  .column.is-2.is-offset-3
-    .subtitle.is-4
-      %span.bold Email |
-  .column.is-4.underline
-    = mail_to 'matthew.bell.290@gmail.com' do
-      %span.primary.bold
-        matthew.bell.290@gmail.com
-%section.columns
-  .column.is-2.is-offset-3
-    .subtitle.is-4
-      %span.bold Skype |
-  .column.is-4
-    %span.primary.bold mathyushazam
-%section.columns
-  .column.is-2.is-offset-3
-    .subtitle.is-4
-      %span.bold Linkedin |
-  .column.is-4
-    = link_to 'https://linkedin.com/in/matthew-bell-290',
-        :target => ':_blank' do
-      %span.primary.bold.underline
-        %i.fa.fa-linkedin-square.fa-2x
+.columns
+  .column.is-6.is-offset-3.background-opaque.has-text-left-aligned
+    %h1.title.is-1 Contact Me
+    %section.columns
+      .column.is-4.is-offset-1
+        .subtitle.is-4
+          %span.bold Email |
+      .column.is-4.underline
+        = mail_to 'matthew.bell.290@gmail.com' do
+          %span.primary.bold
+            matthew.bell.290@gmail.com
+    %section.columns
+      .column.is-4.is-offset-1
+        .subtitle.is-4
+          %span.bold Skype |
+      .column.is-4
+        %span.primary.bold mathyushazam
+    %section.columns
+      .column.is-4.is-offset-1
+        .subtitle.is-4
+          %span.bold Linkedin |
+      .column.is-4
+        = link_to 'https://linkedin.com/in/matthew-bell-290',
+            :target => ':_blank' do
+          %span.primary.bold.underline
+            %i.fa.fa-linkedin-square.fa-2x

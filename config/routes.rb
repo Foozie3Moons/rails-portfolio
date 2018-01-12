@@ -1,12 +1,12 @@
 Rails.application.routes.draw do
 
-  root 'main#index'
+  root 'about#bio'
 
-  get 'about/bio'
+  # get 'about/bio'
 
-  get 'about/skills'
+  # get 'about/skills'
 
-  get 'about/life'
+  # get 'about/life'
 
   get 'contact' => 'main#contact'
 

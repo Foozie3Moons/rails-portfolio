@@ -2,7 +2,7 @@
   .container
     .navbar-brand
       .navbar-item.brand
-        - if request.fullpath != root_path
+        - if true
           %div
             %h1.title.is-3.bold Matthew Bell&nbsp;
           %div.title-separator
@@ -17,7 +17,7 @@
     #navbarMenu.navbar-menu
       .navbar-end
         .navbar-item.has-dropdown.is-hoverable{class: about_is_active?}
-          =link_to 'About', about_bio_path, class: ['navbar-item', about_is_active?]
+          =link_to 'About', root_path, class: ['navbar-item', about_is_active?]
         = link_to 'Portfolio', portfolio_path, class: ['navbar-item', is_active?(portfolio_path)]
         = link_to 'Testimonials', testimonials_path, class: ['navbar-item', is_active?(testimonials_path)]
         = link_to 'Contact', contact_path, class: ['navbar-item', is_active?(contact_path)]
