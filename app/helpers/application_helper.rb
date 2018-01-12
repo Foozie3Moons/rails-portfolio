@@ -4,13 +4,13 @@ module ApplicationHelper
   end
 
   def about_page?
-    # paths = [
-    #   about_bio_path,
-    #   about_life_path
-    # ]
-    # paths.each do |path|
-    #   return true if request.fullpath == path
-    # end
+    paths = [
+      about_bio_path
+      # about_life_path
+    ]
+    paths.each do |path|
+      return true if request.fullpath == path
+    end
     false
   end
 

@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
 
-  root 'about#bio'
+  root 'main#index'
 
-  # get 'about/bio'
+  get 'about/bio'
 
   # get 'about/skills'
 
