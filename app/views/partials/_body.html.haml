@@ -6,11 +6,17 @@
       .column.is-10.is-offset-1
         = yield
   - elsif portfolio_page?
-    .columns.is-vcentered
-      .column.is-4
-        = render :partial => 'partials/skills'
-      .column.is-8
+    - if mobile?
+      %h1.title.is-1.has-text-left-aligned Portfolio
+      .scrollable
         = yield
+        = render :partial => 'partials/skills'
+    - else
+      .columns.is-vcentered
+        .column.is-4
+          = render :partial => 'partials/skills'
+        .column.is-8
+          = yield
   - else
     .columns.is-vcentered
       .column.is-12
