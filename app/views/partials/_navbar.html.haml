@@ -16,7 +16,7 @@
           %span
       #navbarMenu.navbar-menu
         .navbar-end
-          =link_to 'About', about_bio_path, class: ['navbar-item', is_active?(about_bio_path)]
+          = link_to 'About', about_bio_path, class: ['navbar-item', is_active?(about_bio_path)]
           = link_to 'Portfolio', portfolio_path, class: ['navbar-item', is_active?(portfolio_path)]
           = link_to 'Testimonials', testimonials_path, class: ['navbar-item', is_active?(testimonials_path)]
           = link_to 'Contact', contact_path, class: ['navbar-item', is_active?(contact_path)]
@@ -25,5 +25,11 @@
             target: :_blank,
             class: 'navbar-item' do
             %i.fa.fa-linkedin-square.fa-2x{'aria-hidden' => 'true'}
+            &nbsp;
+            %i.fa.fa-arrow-right{'aria-hidden' => 'true'}
+          =link_to 'https://github.com/Foozie3Moons',
+            target: :_blank,
+            class: 'navbar-item' do
+            %i.fa.fa-github.fa-2x{'aria-hidden' => 'true'}
             &nbsp;
             %i.fa.fa-arrow-right{'aria-hidden' => 'true'}
