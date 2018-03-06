@@ -21,13 +21,13 @@ class MainController < ApplicationController
   end
 
   def pdf
-    pdf_filename = File.join(Rails.root, "app/assets/files/matthew_bell_with_phone_number.pdf")
-    send_file(pdf_filename, :disposition => 'inline', :filename => "Matthew_Bell.pdf", :type => "application/pdf")
+    pdf_filename = File.join(Rails.root, "app/assets/files/Matthew_Bell_Resume.pdf")
+    send_file(pdf_filename, :disposition => 'inline', :filename => "Matthew_Bell_Resume.pdf", :type => "application/pdf")
   end
 
   def pdf_download
-    pdf_filename = File.join(Rails.root, "app/assets/files/matthew_bell_with_phone_number.pdf")
-    send_file(pdf_filename, :filename => "Matthew_Bell.pdf", :type => "application/pdf")
+    pdf_filename = File.join(Rails.root, "app/assets/files/Matthew_Bell_Resume.pdf")
+    send_file(pdf_filename, :filename => "Matthew_Bell_Resume.pdf", :type => "application/pdf")
   end
 
   def portfolio
