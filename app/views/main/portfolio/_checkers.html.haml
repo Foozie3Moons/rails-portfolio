@@ -1,0 +1,21 @@
+.column.is-6
+  %h1.title.is-3 Checkers
+  %h5.bold
+    %span.primary jQuery
+    |
+    %span.primary Javascript (ES5)
+  %p
+    A purely
+    %span.primary.bold javascript/jQuery game.
+    Skeletal HTML and then
+    %span.primary.bold jQuery DOM manipulation
+    for the rest. The intention of building this was to demonstrate knowledge of the
+    %span.primary.bold DOM.
+  %p
+    = link_to 'Github', 'https://github.com/Foozie3Moons/extreme-checkers',
+      class: ['button', 'is-small', 'is-info', 'is-outlined'], target: :_blank
+    = link_to 'Website', 'https://foozie3moons.github.io/extreme-checkers',
+      class: ['button', 'is-small', 'is-info', 'is-outlined'], target: :_blank
+.column.is-6
+  = link_to 'https://foozie3moons.github.io/extreme-checkers', target: :_blank do
+    = image_tag 'checkers_screenshot'

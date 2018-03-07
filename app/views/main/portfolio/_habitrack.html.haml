@@ -1,0 +1,27 @@
+.column.is-6
+  %h1.title.is-3 Habitrack
+  %h5.bold
+    %span.primary.bold
+    %span.primary MongoDB
+    |
+    %span.primary Express
+    |
+    %span.primary React
+    |
+    %span.primary Node.js (MERN)
+    |
+    %span.primary D3.js
+    |
+    %span.primary Material UI
+  %p
+    A group collaboration habit tracker using
+    %span.primary.bold D3/Recharts
+    to visualize and motivate users to develop positive habits.
+  %p
+    = link_to 'Github', 'https://github.com/Foozie3Moons/habitrack',
+      class: ['button', 'is-small', 'is-info', 'is-outlined'], target: :_blank
+    = link_to 'Website', 'https://habitrackapp.herokuapp.com',
+      class: ['button', 'is-small', 'is-info', 'is-outlined'], target: :_blank
+.column.is-6
+  = link_to 'http://habitrackapp.herokuapp.com' do
+    = image_tag 'habitrack_screenshot'

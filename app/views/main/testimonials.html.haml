@@ -3,49 +3,10 @@
   - if !mobile?
     %h1.subtitle.is-3 Short testimonials from former colleagues
 .scrollable.content.has-text-left-aligned.background-opaque
-  %blockquote
-    Matt is smart, articulate, conscientious and an extremely hard worker.
-    Throughout his tenure at American Councils, Matt juggled a wide array of
-    tasks and coordinated hundreds of high stakes online testing events.
-    Among Matt’s strongest qualities are his innovative spirit and his ability
-    to create and stream line workflows for complex processes.  Because of his
-    good work, our organization is stronger and more efficient than it was two
-    years ago.
-    %h1.title.is-3
-      %span.primary.bold Ken Petersen, Ph.D.
-    %h1.subtitle.is-5
-      %span.primary-dark.bold Technical Director at American Councils: Online Learning and Assessment
+  = render :partial => 'main/testimonials/ken_petersen'
   %hr
-  %blockquote
-    As his co-worker for the last two years in the Online Learning and Assessment Department at
-    American Councils for International Education, I have seen Matthew quickly gain considerable
-    ability in database administration and general programming. Matthew has written software tools
-    which are now an essential part of daily operations in our office. Our department grapples with
-    many complex demands and subtleties, but Matthew was not fazed by this and got quickly up to
-    speed, not only understanding our business logic but making useful contributions to it on both
-    technical and personal levels. Matthew has also been voraciously studying programming in his
-    free time, and I can personally attest to his growing capabilities in that field.
-    %h1.title.is-3
-      %span.primary.bold David Simon
-    %h1.subtitle.is-5
-      %span.primary-dark.bold Software Engineer at American Councils: Online Learning and Assessment
+  = render :partial => 'main/testimonials/david_simon'
   %hr
-  %blockquote
-    Matt was one of the leading students in the immersive from the very beginning.
-    He has an inquisitive nature and a good mind for development. He always sought to learn and
-    implement something above and beyond the assigned projects. He has a passion for data visualization
-    and Ruby. I would recommend Matt to any employer.
-    %h1.title.is-3
-      %span.primary.bold Steven Peters
-    %h1.subtitle.is-5
-      %span.primary-dark.bold Instructional Lead at General Assembly
-  %blockquote
-    As an instructor at General Assembly I've seen many students come into to my class.
-    Rarely has a student exhibited as much understanding and creativity as Matt.
-    What's more, during group projects Matt proved himself to be a valuable asset to
-    the group dynamics and organization of his team. I'm excited to see what Matt does
-    with his career because I know he'll do great things.
-    %h1.title.is-3
-      %span.primary-dark.bold Jackson Duhon
-    %h1.subtitle.is-5
-      %span.primary-dark.bold Instructional Associate at General Assembly
+  = render :partial => 'main/testimonials/steve_peters'
+  %hr
+  = render :partial => 'main/testimonials/jackson_duhon'

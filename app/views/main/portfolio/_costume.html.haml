@@ -1,0 +1,17 @@
+.column.is-6
+  %h1.title.is-3 CostuME (React Hackathon)
+  %h5.primary.bold React
+  %p
+    A fully functional
+    %span.primary.bold React
+    app built in 24 hours. Have you ever had difficulty choosing a halloween costume?
+    CostuME provides a tinder-styled interface where you can compare liked items to one another to make a decision on which costume you want this year.
+    Search this app for Halloween costume ideas, and return number of different images, their cost, and a link to the item to purchase.
+  %p
+    = link_to 'Github', 'https://github.com/Foozie3Moons/react-ecommerce-hackathon',
+      class: ['button', 'is-small', 'is-info', 'is-outlined'], target: :_blank
+    = link_to 'Website', 'https://costume.herokuapp.com',
+      class: ['button', 'is-small', 'is-info', 'is-outlined'], target: :_blank
+.column.is-6
+  = link_to 'https://react-ecommerce-hackathon.herokuapp.com', target: :_blank do
+    = image_tag 'react_hackathon_screenshot'

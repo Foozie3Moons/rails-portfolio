@@ -1,0 +1,37 @@
+.column.is-6
+  %div
+    %h1.title.is-3 Handsome Scheduler
+  %div
+    %h5.bold
+      %span.primary Ruby
+      |
+      %span.primary Ruby on Rails
+      |
+      %span.primary React
+      |
+      %span.primary Webpacker
+      |
+      %span.primary Google OAuth
+      |
+      %span.primary Handsontable
+      |
+      %span.primary PostgreSQL
+      |
+      %span.primary Bulma
+  %p
+    Using
+    %span.primary.bold Handsontable's React Wrapper
+    as a data input to allow for bulk insertion of
+    %span.primary.bold Google Calendar
+    events using a familiar spreadsheet input. View your calendar events without having to navigate
+    to Google using the
+    %span.primary.bold FullCalendar.io
+    calendar library.
+  %p
+    = link_to 'Github', 'https://github.com/Foozie3Moons/handsome-scheduler',
+      class: ['button', 'is-small', 'is-info', 'is-outlined'], target: :_blank
+    = link_to 'Website', 'https://handsome-scheduler.herokuapp.com',
+      class: ['button', 'is-small', 'is-info', 'is-outlined'], target: :_blank
+.column.is-6
+  = link_to 'https://handsome-scheduler.herokuapp.com', target: :_blank do
+    = image_tag 'handsome_scheduler_screenshot'

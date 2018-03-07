@@ -1,0 +1,30 @@
+.column.is-6
+  %div
+    %h1.title.is-3 Rails Portfolio
+  %div
+    %h5.bold
+      %span.primary Ruby
+      |
+      %span.primary Ruby on Rails
+      |
+      %span.primary HAML
+      |
+      %span.primary D3.js
+      |
+      %span.primary Bulma
+      |
+      %span.primary SASS
+  %p
+    A full stack app using
+    %span.primary.bold Ruby on Rails.
+    It currently does not use
+    %span.primary.bold PostgreSQL
+    but it is set up to use it.
+  %p
+    = link_to 'Github', 'https://github.com/Foozie3Moons/rails-portoflio',
+      class: ['button', 'is-small', 'is-info', 'is-outlined'], target: :_blank
+    = link_to_if 'false', 'Website', 'https://mjbell.io',
+      class: ['button', 'is-small', 'is-info', 'is-outlined'], target: :_blank
+.column.is-6
+  = link_to 'https://mjbell.io', target: :_blank do
+    = image_tag 'portfolio_screenshot'
