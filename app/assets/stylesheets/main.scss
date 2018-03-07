@@ -25,6 +25,11 @@ html {
   height: 65vh;
 }
 
+.vw60 {
+  width: 60vw;
+  margin: 0 auto;
+}
+
 .link {
   color: $primary !important;
   text-decoration: underline;
