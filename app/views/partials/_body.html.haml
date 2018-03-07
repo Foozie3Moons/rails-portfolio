@@ -7,7 +7,6 @@
         = yield
   - elsif portfolio_page?
     - if mobile?
-      %h1.title.is-1.has-text-left-aligned Portfolio
       .scrollable
         = yield
         = render :partial => 'partials/skills'
