@@ -58,6 +58,10 @@ html {
   background-color: rgba(51,54,57,.95);
 }
 
+.hero-head {
+  z-index: 99;
+}
+
 .navbar-dropdown {
   background-color: $secondary;
   color: white;
@@ -93,6 +97,10 @@ html {
 
 .hero-body {
   padding-top: 0;
+}
+
+.hero-body, .hero-footer {
+  display: none;
 }
 
 li.is-active * {

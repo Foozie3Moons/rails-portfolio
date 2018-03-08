@@ -1,7 +1,9 @@
-$(document).on("page:fetch", function(){
-  $(".spinner").show();
+
+// show spinner on AJAX start
+$(document).on("turbolinks:before-visit", function(){
+  $(".spinner-container").show();
 });
 
-$(document).on("page:receive", function(){
-  $(".spinner").hide();
+$(document).on("turbolinks:load", function(){
+  $(".spinner-container").fadeOut(1000);
 });
