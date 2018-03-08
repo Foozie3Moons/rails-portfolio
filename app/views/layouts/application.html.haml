@@ -11,6 +11,10 @@
     = stylesheet_link_tag    'https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.min.css'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   %body
+    .spinner-container
+      .spinner
+        .cube1
+        .cube2
     %section.hero.is-fullheight.is-dark.is-bold
       .hero-head
         = render :partial => 'partials/navbar'
