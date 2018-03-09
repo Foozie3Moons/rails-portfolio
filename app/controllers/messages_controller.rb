@@ -8,6 +8,7 @@ class MessagesController < ApplicationController
 
     if @message.valid?
       MessageMailer.contact(@message).deliver_now
+      MessageMailer.copy(@message).deliver_now
       redirect_to contact_path, notice: "Message received, thanks!"
     else
       render :new
