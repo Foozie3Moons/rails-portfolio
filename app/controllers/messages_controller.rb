@@ -5,11 +5,10 @@ class MessagesController < ApplicationController
 
   def create
     @message = Message.new message_params
-
     if @message.valid?
       MessageMailer.contact(@message).deliver_now
       MessageMailer.copy(@message).deliver_now
-      redirect_to contact_path, notice: "Message received, thanks!"
+      redirect_to contact_path, notice: "Message received, thanks! Check your email for a copy of what was sent."
     else
       render :new
     end

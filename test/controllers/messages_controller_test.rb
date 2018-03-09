@@ -29,7 +29,7 @@ class MessagesControllerTest < ActionDispatch::IntegrationTest
 
     follow_redirect!
 
-    assert_match /Message received, thanks!/, response.body
+    assert_match /Message received, thanks! Check your email for a copy of what was sent./, response.body
   end
 
 

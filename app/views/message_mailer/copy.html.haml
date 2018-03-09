@@ -1,16 +1,18 @@
-= "Dear #{@name}"
+%p= "Dear #{@name},"
 
-Thank you for reaching out! I have received your email, and I will respond
-as soon as I can. For your records, here is a copy of what I received:
-
+%p
+  Thank you for reaching out! I have received your email, and I will respond
+  as soon as I can. For your records, here is a copy of what I received:
 %blockquote
-  = @body
-
-If you believe you have receive this email in error, please let me know!
-
-Sincerely,
-
-Matthew Bell
-Software Development Engineer
-matthew.bell.290@gmail.com
-mjbell.io
+  = simple_format(@body)
+%p If you believe you have receive this email in error, please let me know!
+%p Sincerely,
+%p
+  Matthew Bell
+  %br
+  Software Development Engineer
+  %br
+  matthew.bell.290@gmail.com
+  %br
+  %a{href: 'https://mjbell.io'}
+    mjbell.io
