@@ -22,6 +22,11 @@ html {
   background-color: black;
 }
 
+form {
+  margin: 0 auto;
+  width: 50vw;
+}
+
 .vh65 {
   height: 65vh;
 }
@@ -338,9 +343,14 @@ input, textarea { display: block; }
 }
 
 @media screen and (max-width: 1023px) {
+  form {
+    width: 75vw;
+  }
+
   .navbar-brand .navbar-item {
     display: block;
   }
+
   .title-separator {
     display: none;
   }
