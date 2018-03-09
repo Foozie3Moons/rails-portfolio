@@ -11,6 +11,7 @@ $primary-dark: #64DD17;
 $primary-darker: #3C840D;
 $secondary: #212121;
 $secondary-light: #E3E3E3;
+$warning: #FFF00D;
 
 @mixin disabled-button() {
   color: #76FF03;
@@ -299,6 +300,16 @@ blockquote {
 }
 
 input, textarea { display: block; }
+
+.message.is-warninng > .message-header {
+  background-color: $warning !important;
+  border-color: $warning !important;
+}
+
+.message.is-success > .message-header {
+  background-color: $primary !important;
+  border-color: $primary !important;
+}
 
 @media screen and (max-width: 1023px) {
   .headshot {

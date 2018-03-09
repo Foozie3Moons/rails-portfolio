@@ -10,4 +10,8 @@
             Engineering ways to make professionals more effective is a passion of mine.
             The key to making this a reality starts with well documented, semantically sensible, and testable code.
           %article.tile.is-child#index-persistent-text
-            = link_to 'View My Portfolio', portfolio_path, class: ['button', 'is-medium', 'is-info', 'is-outlined']
+            .columns
+              .column
+                = link_to 'View My Portfolio', portfolio_path, class: ['button', 'is-medium', 'is-info', 'is-outlined']
+              .column
+                = link_to 'Send Me an Email', contact_path, class: ['button', 'is-medium', 'is-info', 'is-outlined']
