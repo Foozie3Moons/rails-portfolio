@@ -293,6 +293,8 @@ blockquote {
   padding-bottom: 5em;
 }
 
+input, textarea { display: block; }
+
 @media screen and (max-width: 1023px) {
   .headshot {
     border-radius: 50%;

@@ -8,9 +8,9 @@ Rails.application.routes.draw do
 
   # get 'about/life'
 
-  get 'contact' => 'main#contact'
+  get 'contact', to: 'messages#new'
 
-  post 'contact' => 'main#send_mail'
+  post 'contact', to: 'messages#create', as: 'create_message'
 
   get 'portfolio' => 'main#portfolio'
 
