@@ -1,14 +1,19 @@
 require 'test_helper'
 
 class MainControllerTest < ActionDispatch::IntegrationTest
-  
-  test "should get contact" do
-    get main_contact_url
+
+  test "should get about" do
+    get about_bio_path
+    assert_response :success
+  end
+
+  test "should get resume" do
+    get resume_path
     assert_response :success
   end
 
   test "should get portfolio" do
-    get main_portfolio_url
+    get portfolio_url
     assert_response :success
   end
 
