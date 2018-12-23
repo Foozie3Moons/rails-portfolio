@@ -7,10 +7,11 @@ end
 
 class Message
   include ActiveModel::Model
-    include ActiveModel::Conversion
-    include ActiveModel::Validations
+  include ActiveModel::Conversion
+  include ActiveModel::Validations
 
-    attr_accessor :name, :email, :body
-    validates :name, :email, :body, presence: true
-    validates :email, email: true
+  attr_accessor :name, :email, :body, :first_name
+  validates :name, :email, :body, presence: true
+  validates :email, email: true
+  validates :first_name, presence: false
 end

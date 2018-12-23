@@ -17,6 +17,8 @@
         %p= notice
   - else
     .field
+      = f.hidden_field :first_name, placeholder: 'do not fill out this field', class: 'input'
+    .field
       .label.primary.bold.is-size-4.has-text-left-aligned Name
       .control.has-icons-left
         = f.text_field :name, placeholder: 'Your name', class: 'input'

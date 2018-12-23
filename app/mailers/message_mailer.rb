@@ -19,4 +19,12 @@ class MessageMailer < ApplicationMailer
          cc: "matthew.bell.290@gmail.com"
   end
 
+  def notify_spam(message)
+    @body = message.body
+    @name = message.name
+
+    mail to: "matthew.bell.290@gmail.com",
+         from: "notifications@mjbell.io",
+         subject: "New SCAM message from #{message.name} | #{message.email}"
+   end
 end
