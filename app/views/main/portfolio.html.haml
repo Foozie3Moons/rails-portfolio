@@ -23,6 +23,8 @@
   %h1.title.is-1.has-text-left-aligned Portfolio
   .has-text-left-aligned.scrollable.background-opaque
     .columns.is-vcentered.portfolio-item
+      =render :partial => 'main/portfolio/voy_travel'
+    .columns.is-vcentered.portfolio-item
       =render :partial => 'main/portfolio/handsome_scheduler'
     .columns.is-vcentered.portfolio-item
       = render :partial => 'main/portfolio/portfolio'
@@ -30,7 +32,5 @@
       = render :partial => 'main/portfolio/habitrack'
     .columns.is-vcentered.portfolio-item
       = render :partial => 'main/portfolio/eoen'
-    .columns.is-vcentered.portfolio-item
-      = render :partial => 'main/portfolio/costume'
     .columns.is-vcentered.portfolio-item
       = render :partial => 'main/portfolio/checkers'

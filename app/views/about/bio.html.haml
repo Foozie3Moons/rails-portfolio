@@ -1,43 +1,58 @@
 -# = render :partial => 'partials/about_tabs'
 %h1.title.has-text-left-aligned.is-1 About
 .scrollable.has-text-left-aligned.about.content.background-opaque
-  %h1.title.is-2.has-text-left-aligned.first Hi, I'm Matt
+  %h1.title.is-2.has-text-left-aligned.first My name is Matt
   %p.second
     I am a
     %span.primary.bold full stack web developer
-    currently specializing in
+    specializing in
     %span.primary.bold Ruby
     and
     %span.primary.bold Ruby on Rails.
-    I love working with the full stack of an application, but feel more at home
-    with the back-end. I like being able to see the big picture of an application
-    so I can see how all the pieces fit together, and make sure that everything
-    is communicating properly with one another.
+    I am currently building a platform to universalize the travel rewards space.
+    I work primarily on the backend, but regularly contibute to the frontend
+    %span.primary.bold React/Redux
+    app. Understanding the data, from the database all the way to the user is one of
+    the things I prioritize understanding most, as it allows me to contribute to
+    important architectural and design decisions.
+  %h1.title.is-3 What I'm looking for
+  %p
+    My top skills are
+    %span.primary.bold Ruby, Ruby on Rails, Javascript, SQL (PostgreSQL),
+    and
+    %span.primary.bold React.
+    Ideally, my next job will come using these skills so I can continue mastering them.
+    Not every language or framework is right for the job, so I'm open to learning new languages
+    and frameworks, which is why I'm also learning and interested with
+    %span.primary.bold Elixir/Phoenix
+    and
+    %span.primary.bold Golang.
   %h1.title.is-3.third My Passion
   %p.fourth
     My passion for coding came from an inability to solve simple problems in a
-    fast and efficient way. Data stored in spreadsheets just does not cut it.
+    fast and efficient way. Data stored in spreadsheets just did not cut it.
     So I started learning
     %span.primary.bold Ruby
-    in my free time, and eventually used that knowledge to
-    %span.primary.bold write useful scripts
+    in my free time, and eventually used that knowledge to write
+    %span.primary.bold useful scripts
     to
-    %span.primary.bold automate tasks professionally,
-    such as document parsing and data organization. These scripts took several hours to create,
-    and saved several days if not weeks of manual work entering and reviewing that work.
-    Then, as I graduate
-    %span.primary.bold General Assembly's Web Development Immersive
-    program, I found that my prior experience allowed me to fully appreciate everything
-    it had to offer, and now I build
-    %span.primary.bold full stack applications
-    from scratch. I'm excited to continue to learn, grow, and share my knowledge
-    as I use and develop new technologies to solve problems big and small.
-  %h1.title.is-3.fifth Learn More
+    %span.primary.bold automate tasks
+    professionally at American Councils for International Education such as document parsing and
+    %span.primary.bold data organization.
+  %p.fourth
+    After I graduating General Assembly's Web Development Immersive program,
+    I found that my prior experience allowed me to excel in the classroom and now excel in
+    the office, and now I build software for a loyalty rewards
+    %span.primary.bold startup
+    called Voy Rewards. I'm excited to continue to learn, grow, and share knowledge
+    to my fellow developers.
+
+  %h1.title.is-3.fifth Interested in learning more or seeing my work?
   %p.sixth
     .columns
       .column.is-3.is-offset-3
         = link_to contact_path, :class => ['button', 'is-info', 'is-outlined', 'is-medium'] do
-          Send Me An Email
+          Get in Touch
       .column.is-3
         = link_to portfolio_path, :class => ['button', 'is-info', 'is-outlined', 'is-medium'] do
-          View My Portfolio
+          View Portfolio

@@ -19,14 +19,24 @@ gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
+# Bulma CSS framework
 gem 'bulma-rails', '~> 0.6.0'
+# jQuery for easy DOM manipulation
 gem 'jquery-rails', '~> 4.0', '>= 4.0.5'
+# Not currently using react-rails probably don't need this in production
 gem 'react-rails'
+# Sweet icons for programming languages
 gem 'material_icons'
+# Not quite sure why I have this in here
 gem 'font-awesome-sass', '~> 4.7.0'
+# Not sure why I need this...
 gem 'animate-rails'
+# templating language for the views
 gem 'haml'
+# using mailer form to send me emails
 gem 'mail_form'
+# trying out adding gists to my resume
+gem 'gist-embed-rails'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'

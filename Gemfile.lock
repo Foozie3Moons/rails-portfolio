@@ -76,6 +76,7 @@ GEM
     ffi (1.9.25)
     font-awesome-sass (4.7.0)
       sass (>= 3.2)
+    gist-embed-rails (2.0.0)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
     haml (5.0.4)
@@ -216,6 +217,7 @@ DEPENDENCIES
   capybara (~> 2.13)
   coffee-rails (~> 4.2)
   font-awesome-sass (~> 4.7.0)
+  gist-embed-rails
   haml
   jbuilder (~> 2.5)
   jquery-rails (~> 4.0, >= 4.0.5)
