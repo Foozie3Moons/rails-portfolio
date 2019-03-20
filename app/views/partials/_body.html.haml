@@ -9,12 +9,9 @@
     - if mobile?
       .scrollable
         = yield
-        = render :partial => 'partials/skills'
     - else
       .columns.is-vcentered
-        .column.is-4
-          = render :partial => 'partials/skills'
-        .column.is-8
+        .column.is-12
           = yield
   - else
     .columns.is-vcentered
