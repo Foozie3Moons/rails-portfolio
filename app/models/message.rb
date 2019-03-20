@@ -10,8 +10,8 @@ class Message
   include ActiveModel::Conversion
   include ActiveModel::Validations
 
-  attr_accessor :name, :email, :body, :first_name
+  attr_accessor :name, :email, :body, :comment
   validates :name, :email, :body, presence: true
   validates :email, email: true
-  validates :first_name, presence: false
+  validates :comment, presence: false
 end

@@ -16,8 +16,9 @@
       .message-body.has-text-left-aligned
         %p= notice
   - else
-    .field
-      = f.hidden_field :first_name, placeholder: 'do not fill out this field', class: 'input'
+    %p{ :style => "height: 1px; width: 1px; overflow: hidden" }
+      Please leave this field blank.
+      = f.text_field :comment
     .field
       .label.primary.bold.is-size-4.has-text-left-aligned Name
       .control.has-icons-left
