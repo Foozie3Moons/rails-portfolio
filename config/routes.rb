@@ -10,8 +10,6 @@ Rails.application.routes.draw do
 
   get 'contact', to: 'messages#new'
 
-  post 'contact', to: 'messages#create', as: 'create_message'
-
   get 'portfolio' => 'main#portfolio'
 
   get 'testimonials' => 'main#testimonials'
