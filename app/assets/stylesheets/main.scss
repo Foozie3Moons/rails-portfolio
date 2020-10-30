@@ -9,6 +9,7 @@
 $primary: #68C900;
 $primary-dark: #64DD17;
 $primary-darker: #3C840D;
+$red: #8B0000;
 $secondary: #212121;
 $secondary-light: #E3E3E3;
 $background-color: rgb(51,54,57);
@@ -54,8 +55,14 @@ form {
 
 .background-opaque {
   border-radius: 5px;
-  padding: 1em;
-  background-color: rgba(51,54,57,0);
+  padding: 2em;
+  background-color: $secondary !important;
+}
+
+.background-transparent {
+  border-radius: 5px;
+  padding: 2em;
+  background-color: rgba(0,0,0,0) !important;
 }
 
 .hero.is-dark.is-bold {
@@ -99,12 +106,17 @@ form {
   color: $primary-dark;
 }
 
+.red {
+  color: $red;
+}
+
 .hero.is-dark {
   background-color: rgba(0,0,0,.3);
 }
 
 .hero-body {
   padding-top: 0;
+  padding-bottom: 0;
 }
 
 .hero-body, .hero-footer {

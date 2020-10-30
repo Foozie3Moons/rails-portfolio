@@ -1,39 +1,39 @@
 - if mobile?
   %h1.title.is-1.has-text-left-aligned Portfolio
-  .has-text-left-aligned.background-opaque.content
-    .columns.is-vcentered.portfolio-item
+  .has-text-left-aligned.content
+    .columns.is-vcentered.portfolio-item.background-opaque
       =render :partial => 'main/portfolio/voy_travel'
     %hr
-    .columns.is-vcentered.portfolio-item
+    .columns.is-vcentered.portfolio-item.background-opaque
       =render :partial => 'main/portfolio/handsome_scheduler'
     %hr
-    .columns.is-vcentered.portfolio-item
+    .columns.is-vcentered.portfolio-item.background-opaque
       = render :partial => 'main/portfolio/portfolio'
     %hr
-    .columns.is-vcentered.portfolio-item
+    .columns.is-vcentered.portfolio-item.background-opaque
       = render :partial => 'main/portfolio/habitrack'
     %hr
-    .columns.is-vcentered.portfolio-item
+    .columns.is-vcentered.portfolio-item.background-opaque
       = render :partial => 'main/portfolio/eoen'
     %hr
-    .columns.is-vcentered.portfolio-item
+    .columns.is-vcentered.portfolio-item.background-opaque
       = render :partial => 'main/portfolio/costume'
     %hr
-    .columns.is-vcentered.portfolio-item
+    .columns.is-vcentered.portfolio-item.background-opaque
       = render :partial => 'main/portfolio/checkers'
     %hr
 - else
   %h1.title.is-1.has-text-left-aligned Portfolio
-  .has-text-left-aligned.scrollable.background-opaque
-    .columns.is-vcentered.portfolio-item
+  .has-text-left-aligned.scrollable
+    .columns.is-vcentered.portfolio-item.background-opaque
       =render :partial => 'main/portfolio/voy_travel'
-    .columns.is-vcentered.portfolio-item
+    .columns.is-vcentered.portfolio-item.background-opaque
       =render :partial => 'main/portfolio/handsome_scheduler'
-    .columns.is-vcentered.portfolio-item
+    .columns.is-vcentered.portfolio-item.background-opaque
       = render :partial => 'main/portfolio/portfolio'
-    .columns.is-vcentered.portfolio-item
+    .columns.is-vcentered.portfolio-item.background-opaque
       = render :partial => 'main/portfolio/habitrack'
-    .columns.is-vcentered.portfolio-item
+    .columns.is-vcentered.portfolio-item.background-opaque
       = render :partial => 'main/portfolio/eoen'
-    .columns.is-vcentered.portfolio-item
+    .columns.is-vcentered.portfolio-item.background-opaque
       = render :partial => 'main/portfolio/checkers'
